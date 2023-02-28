@@ -1,7 +1,7 @@
 var tams = [];
 
 function setup() {
-  createCanvas(800,800); 
+  createCanvas(1000,800); 
 
   //Aca en el setup estamos rellenando el array con una serie de numeros random.
 
@@ -35,6 +35,7 @@ function randomizar() {
   for (let i = 0; i < tams.length; i++) {
     tams[i] = random(100);
   }
+  console.log("reset");
 }
 
 function mousePressed() {
