@@ -12,14 +12,14 @@ function draw() {
 
 
     //hacemos un doble for loop para dibujar "en grilla"
-    //for (int i=0; i<10; i++) {
-    //  for (int j=0; j<10; j++) {
-    //    float distancia = dist(mouseX, mouseY, 100*i, 100*j);
-    //    float distanciaMapped = map(distancia,0,1000, 1, 0);
+    for (let i=0; i<10; i++) {
+     for (let j=0; j<10; j++) {
+       float distancia = dist(mouseX, mouseY, 100*i, 100*j);
+       float distanciaMapped = map(distancia,0,1000, 1, 0);
 
-    //    dibujaCruz(100*i, 100*j, distanciaMapped); //llamamos a nuestra funcion, y posicionamos cada unidad en su propio lugar
-    //  }
-    //}
+       dibujaCruz(100*i, 100*j, distanciaMapped); //llamamos a nuestra funcion, y posicionamos cada unidad en su propio lugar
+     }
+    }
 }
 
 function dibujaCruz( centroX, centroY, dist) {

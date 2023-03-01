@@ -1,13 +1,13 @@
-var vel = 3;
-var rot = 1;
+let vel = 3;
+let rot = 1;
 
-var nFilas = 9;
-var nColumnas = 9;
+let nFilas = 9;
+let nColumnas = 9;
 
-var angulos = [];
-var velocidades = [];
-var tamanos = [];
-var colores = [];
+let angulos = [];
+let velocidades = [];
+let tamanos = [];
+let colores = [];
 
 
 function setup() {
@@ -24,9 +24,9 @@ function draw() {
     randomizar();
   }
 
-  for (var i = 0; i < velocidades[0].length; ++i) {
-    for (var j = 0; j < velocidades[1].length; ++j) {
-      var miRot = angulos[i][j] += velocidades[i][j];
+  for (let i = 0; i < velocidades[0].length; ++i) {
+    for (let j = 0; j < velocidades[1].length; ++j) {
+      let miRot = angulos[i][j] += velocidades[i][j];
       figura(60 * i, 60 * j, tamanos[i][j], miRot, colores[i][j]);
     }
   }
@@ -55,30 +55,30 @@ function mousePressed() {
 
 function randomizar() {
 
-  for (var i = 0; i < nFilas; ++i) {
+  for (let i = 0; i < nFilas; ++i) {
     angulos[i] = [];
-    for (var j = 0; j < nColumnas; ++j) {
+    for (let j = 0; j < nColumnas; ++j) {
       angulos[i][j] = random(360);
     }
   }
 
-  for (var i = 0; i < nFilas; ++i) {
+  for (let i = 0; i < nFilas; ++i) {
     velocidades[i] = [];
-    for (var j = 0; j < nColumnas; ++j) {
+    for (let j = 0; j < nColumnas; ++j) {
       velocidades[i][j] = random(- 1, 1);
     }
   }
 
-  for (var i = 0; i < nFilas; ++i) {
+  for (let i = 0; i < nFilas; ++i) {
     colores[i] = [];
-    for (var j = 0; j < nColumnas; ++j) {
+    for (let j = 0; j < nColumnas; ++j) {
       colores[i][j] = color(random(255), 200, 100 +random(155));
     }
   }
 
-  for (var i = 0; i < nFilas; ++i) {
+  for (let i = 0; i < nFilas; ++i) {
     tamanos[i] = [];
-    for (var j = 0; j < nColumnas; ++j) {
+    for (let j = 0; j < nColumnas; ++j) {
       tamanos[i][j] = random(20, 40);
     }
   }
