@@ -1,4 +1,4 @@
-var miColor; //delaramos una variable del tipo "color".
+let miColor; //delaramos una variable del tipo "color".
 
 function setup() {
   createCanvas(300, 300); 

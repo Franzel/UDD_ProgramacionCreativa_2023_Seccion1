@@ -1,4 +1,4 @@
-var miColor; //definimos una variable, del tipo float
+let miColor; //definimos una variable, del tipo float
 
 function setup() {
   createCanvas(500, 500);

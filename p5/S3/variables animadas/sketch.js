@@ -1,5 +1,5 @@
-var posX;
-var tam;
+let posX;
+let tam;
 
 function setup() {
   createCanvas(800, 400);

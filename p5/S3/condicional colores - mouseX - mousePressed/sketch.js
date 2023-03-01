@@ -1,4 +1,4 @@
-var miColor;
+let miColor;
 
 function setup() {
   createCanvas(300, 300); 

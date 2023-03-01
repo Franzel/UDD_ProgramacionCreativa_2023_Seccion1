@@ -1,4 +1,4 @@
-var cuadrao; // creamos una variable tipo boolean
+let cuadrao; // creamos una variable tipo boolean
 
 function setup() {
   createCanvas(400, 200);

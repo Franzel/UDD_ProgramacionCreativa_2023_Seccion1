@@ -1,5 +1,5 @@
-var c;
-var s;
+let c;
+let s;
 
 function setup() {
   createCanvas(500, 500);

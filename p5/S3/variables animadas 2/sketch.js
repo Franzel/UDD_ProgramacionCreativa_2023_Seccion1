@@ -1,5 +1,5 @@
-var posX, posY; //declaramos variables de posicion 
-var r;
+let posX, posY; //declaramos variables de posicion 
+let r;
 
 function setup() {
   posX= width/2;//valor inicial, al medio del canvas
