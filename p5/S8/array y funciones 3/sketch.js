@@ -1,13 +1,13 @@
-var vel = 3;
-var rot = 1;
+let vel = 3;
+let rot = 1;
 
-var nElementos = 15;
-var nColumnas = 9;
+let nElementos = 15;
+let nColumnas = 9;
 
-var angulos = [];
-var velocidades = [];
-var tamanos = [];
-var colores = [];
+let angulos = [];
+let velocidades = [];
+let tamanos = [];
+let colores = [];
 
 
 function setup() {
@@ -18,11 +18,11 @@ function setup() {
 
 function draw() {
   background(255);
-    for (var i = 0; i < nElementos; ++i) {
+    for (let i = 0; i < nElementos; ++i) {
         push();
         translate(width/2, height/2);
         rotate(radians(30*i));
-        var miRot = angulos[i] += velocidades[i];
+        let miRot = angulos[i] += velocidades[i];
         figura(100, 0, tamanos[i], miRot, colores[i]);
         pop();
         
@@ -51,19 +51,19 @@ function mousePressed() {
 
 function randomizar() {
 
-    for (var i = 0; i < nElementos; ++i) {
+    for (let i = 0; i < nElementos; ++i) {
             angulos[i] = random(360);
     }
 
-    for (var i = 0; i < nElementos; ++i) {
+    for (let i = 0; i < nElementos; ++i) {
             velocidades[i] = random(- 1,1);
     }
     
-    for (var i = 0; i < nElementos; ++i) {
+    for (let i = 0; i < nElementos; ++i) {
             colores[i] = color(random(255), 200, 100 +random(155));
     }
 
-    for (var i = 0; i < nElementos; ++i) {
+    for (let i = 0; i < nElementos; ++i) {
             tamanos[i] = random(15,35);
     }
   

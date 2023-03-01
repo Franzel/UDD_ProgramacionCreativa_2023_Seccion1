@@ -1,50 +1,29 @@
-var selectColor;
-var paleta = [];
-var misColores = [];
+let vel = 3;
+let rot = 1;
 
 function setup() {
-  
-  createCanvas(500, 500);
-
-  paleta[0] = color(255, 0, 0);
-  paleta[1] = color(0,255, 0);
-  paleta[2] = color(0, 0, 255);
-  paleta[3] = color(50, 50, 0);
-  
-  for (var i = 0; i < 10; i++ ) {
-    misColores[i] = [];
-    for (var j = 0; j<10; j++) {
-    misColores[i][j] = paleta [round(random(3))];
-    }
-  }
-  
-  rectMode(CENTER);
+    createCanvas(512, 512);
+    rectMode(CENTER);
 }
 
 function draw() {
-  background(255);
-  
-  if(frameCount%15==0){
-      eligeColor();
-  }
+    rot += vel;
 
-  for (var i = 0; i < 10; i++ ) {
-    for (var j = 0; j<10; j++) {
-      fill(misColores[i][j]);
-      figura(i*60, j*60, 80);
-    }
-  }
+    background(255);
+    figura(200,200,100,-rot/2, color(255,0,0));
+    figura(300,290,50,-rot, color(255,0,255));
+    figura(100,350,50,rot, color(255,255,0));
+    
 }
 
-function figura(posX, posY, tam) {
-  ellipse(posX, posY, tam/2, tam/2);
-}
-
-function eligeColor() {
-  for (var i = 0; i < 10; i++ ) {
-    misColores[i] = [];
-    for (var j = 0; j<10; j++) {
-    misColores[i][j] = paleta [round(random(3))];
-    }
-  }
+function figura( x, y, t, r, c) {
+    push();
+    translate(x, y);
+    rotate(radians(r));
+    fill(c);
+    rect(0, 0, t, t);
+    ellipse(0, 0, 5, 5);
+    rect(t/2, 0, t/4, t/4);
+    rect(-t/2, 0, t/4, t/4);
+    pop();
 }

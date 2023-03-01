@@ -1,6 +1,6 @@
-var selectColor;
-var paleta = [];
-var misColores = [];
+let selectColor;
+let paleta = [];
+let misColores = [];
 
 function setup() {
   
@@ -11,9 +11,9 @@ function setup() {
   paleta[2] = color(0, 0, 255);
   paleta[3] = color(50, 50, 0);
   
-  for (var i = 0; i < 10; i++ ) {
+  for (let i = 0; i < 10; i++ ) {
     misColores[i] = [];
-    for (var j = 0; j<10; j++) {
+    for (let j = 0; j<10; j++) {
     misColores[i][j] = paleta [round(random(3))];
     }
   }
@@ -28,8 +28,8 @@ function draw() {
       eligeColor();
   }
 
-  for (var i = 0; i < 10; i++ ) {
-    for (var j = 0; j<10; j++) {
+  for (let i = 0; i < 10; i++ ) {
+    for (let j = 0; j<10; j++) {
       fill(misColores[i][j]);
       figura(i*60, j*60, 80);
     }
@@ -41,9 +41,9 @@ function figura(posX, posY, tam) {
 }
 
 function eligeColor() {
-  for (var i = 0; i < 10; i++ ) {
+  for (let i = 0; i < 10; i++ ) {
     misColores[i] = [];
-    for (var j = 0; j<10; j++) {
+    for (let j = 0; j<10; j++) {
     misColores[i][j] = paleta [round(random(3))];
     }
   }
