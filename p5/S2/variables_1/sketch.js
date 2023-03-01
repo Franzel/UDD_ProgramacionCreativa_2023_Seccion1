@@ -1,6 +1,6 @@
-var posX;
-var posY;
-var s;
+let posX;
+let posY;
+let s;
 
 function setup() {
   s = 100;
