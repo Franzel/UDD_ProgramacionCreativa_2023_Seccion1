@@ -1,5 +1,5 @@
-var posX, posY;  //variables para posicion
-var s;  // variable para tamaño
+let posX, posY;  //variables para posicion
+let s;  // variable para tamaño
 
 function setup() {
   createCanvas(300, 300);

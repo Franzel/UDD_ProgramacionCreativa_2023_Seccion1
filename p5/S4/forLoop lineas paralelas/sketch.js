@@ -1,4 +1,4 @@
-var nElementos;
+let nElementos;
 
 function setup() {
   background(0);
@@ -8,7 +8,7 @@ function setup() {
 
 function draw() {
   background(0);
-  for (var i=0; i<nElementos; i++) {
+  for (let i=0; i<nElementos; i++) {
     stroke(2*i);
     line(0, 5*i, width, 5*i);
   }

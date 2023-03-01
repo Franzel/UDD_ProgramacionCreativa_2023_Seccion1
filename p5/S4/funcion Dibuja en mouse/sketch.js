@@ -7,8 +7,8 @@ En este caso la función dibujaCirculo() que creamos nosotros
  que se van a usar para dar posicion a la elipse,
  pero podría ser cualquier par de números que queramos. */
 
-var posX;
-var posY;
+let posX;
+let posY;
 
 function setup() {
   createCanvas(500, 500);

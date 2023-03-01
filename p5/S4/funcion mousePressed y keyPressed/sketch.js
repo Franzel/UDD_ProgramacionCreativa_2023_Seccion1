@@ -1,5 +1,5 @@
-var huboClick = false;
-var miColor;
+let huboClick = false;
+let miColor;
 
 
 function setup() {
@@ -11,7 +11,7 @@ function draw() {
   background(0);
   
   fill(miColor);
-  if (huboClick === true) {
+  if (huboClick == true) {
     circle(width/2, height/2, 100);
   }
 }

@@ -1,4 +1,4 @@
-var miColor;
+let miColor;
 
 
 function setup() {
@@ -21,10 +21,10 @@ function mouseDragged() {
 }
 
 function keyPressed() {
-  if (key== 'a') {
+  if (key == 'a') {
     miColor = color(0, 0, 255);
   }
-  if (key== 's') {
+  if (key == 's') {
     miColor = color(255, 255, 0);
   }
 }

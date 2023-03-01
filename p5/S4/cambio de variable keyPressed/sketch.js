@@ -1,4 +1,4 @@
-var col;// variable que usaremos para el color
+let col;// variable que usaremos para el color
 
 function setup() {
   createCanvas(500, 500); 
