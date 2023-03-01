@@ -3,9 +3,9 @@ En este ejemplo usamos un array para guardar 3 colores
  A los cuales accedemos en el draw a través de la condicional de mousePressed
  */
 
-var colorFondo;
-var colores;
-var index = 0;
+let colorFondo;
+let colores;
+let index = 0;
 
 
 function setup() {

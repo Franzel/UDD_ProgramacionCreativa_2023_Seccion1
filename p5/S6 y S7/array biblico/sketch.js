@@ -1,4 +1,4 @@
-var biblia = [
+let biblia = [
   "pedro", "jonas", "judas", "J.C.", 
   "mateo", "magdalena", "maria", "lazaro", 
   "pedro", "jonas"

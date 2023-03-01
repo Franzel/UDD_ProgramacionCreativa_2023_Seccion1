@@ -1,5 +1,5 @@
-var valoresA = [40, 80, 120, 160, 200];
-var valoresB = [20, 40, 60, 80, 100];
+let valoresA = [40, 80, 120, 160, 200];
+let valoresB = [20, 40, 60, 80, 100];
 
 function setup() {
   createCanvas(500, 500);

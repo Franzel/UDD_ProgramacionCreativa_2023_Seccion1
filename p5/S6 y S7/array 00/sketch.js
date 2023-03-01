@@ -1,5 +1,5 @@
 //declaramos, creamos y asignamos un array de floats
-var valoresA = [];
+let valoresA = [];
 //esta es solo una manera de crear arrays
 
 function setup() {

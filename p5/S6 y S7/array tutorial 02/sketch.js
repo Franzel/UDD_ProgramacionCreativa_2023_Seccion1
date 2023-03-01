@@ -1,5 +1,5 @@
-var largos = [];
-var colores = [];
+let largos = [];
+let colores = [];
 
 function setup() {
   createCanvas(600, 500);

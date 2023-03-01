@@ -1,7 +1,7 @@
-var nElementos = 15;
-var largos = [];
-var colores = [];
-var alto = 20;
+let nElementos = 15;
+let largos = [];
+let colores = [];
+let alto = 20;
 
 function setup() {
   createCanvas(600, 500);

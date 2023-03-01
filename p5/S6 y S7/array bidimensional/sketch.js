@@ -1,9 +1,9 @@
-var nFilas = 20;
-var nColumnas = 20;
-var espacio = 30;
+let nFilas = 20;
+let nColumnas = 20;
+let espacio = 30;
 
 //declaremos el array vacio, la cantidad de elementos esta dado por las variables nColumnas y nFilas
-var miNumero = [];
+let miNumero = [];
 
 function setup() {
   createCanvas (400, 400);

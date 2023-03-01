@@ -1,4 +1,4 @@
-var tams = [];
+let tams = [];
 
 function setup() {
     createCanvas(512, 512); 
@@ -19,7 +19,7 @@ function draw() {
 
     
     for (let i = 0;i < tams.length ; i++) {
-        var r = map(tams[i], 0, 100, 0, 255);
+        let r = map(tams[i], 0, 100, 0, 255);
         fill(r,0,0);
         rect(100, i *5, tams[i], 3); //dibujemos barritas cuyo largo lo define el array
     }

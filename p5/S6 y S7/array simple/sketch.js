@@ -1,25 +1,25 @@
-var tams = [];
+let tams = [];
 
-void setup() {
+function setup() {
   
   
-  size(512, 512); 
+  createCanvas(512, 512); 
   //cuando decimos tams.length estamos pidiendo el "largo" de la lista o el "tamano del array"
   //definido arriba cuando creamos el array.
   //Aca en el setup estamos rellenando el array con una serie de numeros random.
 
-  for (int i = 0; i < 50; i++) {
+  for (let i = 0; i < 50; i++) {
     tams[i] = random(100);
   }
 
-  println(tams); //veamos los valores que nos dio el random
+  print(tams); //veamos los valores que nos dio el random
 }
 
-void draw() {
+function draw() {
   background(0);
 
   stroke(255);
-  for (int i = 0; i < tams.length; i++) {
+  for (let i = 0; i < tams.length; i++) {
     rect(100, i *5, tams[i], 3); //dibujemos barritas cuyo largo lo define el array
   }
 }

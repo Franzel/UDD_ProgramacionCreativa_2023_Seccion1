@@ -1,4 +1,4 @@
-var largos = [];
+let largos = [];
 
 function setup() {
   createCanvas(600, 500);

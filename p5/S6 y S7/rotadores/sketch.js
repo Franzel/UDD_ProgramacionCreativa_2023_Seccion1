@@ -1,7 +1,7 @@
-var nCols = 50;
-var nFilas = 50;
-var angulos = [];
-var velocidades = [];
+let nCols = 50;
+let nFilas = 50;
+let angulos = [];
+let velocidades = [];
 
 function setup() {
   createCanvas(500, 500);
@@ -19,7 +19,7 @@ function setup() {
 
 function draw() {
   background(0);
-  var rot;
+
 
   for (let i = 0; i < angulos.length; ++i) {
     for (let j = 0; j < angulos[1].length; ++j) {

@@ -1,6 +1,6 @@
 /* Este ejemplo muestra los pasos básicos para trabajar con un array */
 
-var myNumbers = []; // declarar array de ints
+let myNumbers = []; // declarar array de ints
 
 function setup() {
 

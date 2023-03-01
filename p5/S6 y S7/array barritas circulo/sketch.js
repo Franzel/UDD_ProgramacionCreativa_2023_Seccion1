@@ -1,4 +1,4 @@
-var tams = [];
+let tams = [];
 
 function setup() {
   createCanvas(1000,800); 
@@ -22,8 +22,8 @@ function draw() {
     push();
     translate(width/2, height/2);
     rotate(TWO_PI/tams.length *i);
-    var r = map(tams[i], 0, 100, 50, 255);
-    var g = map(tams[i], 0, 100, 100, 255);
+    let r = map(tams[i], 0, 100, 50, 255);
+    let g = map(tams[i], 0, 100, 100, 255);
     fill(r, g, 0);
     rect(100, 0, tams[i], 3); //dibujemos barritas cuyo largo lo define el array
     text(round(tams[i]*10)*0.1, 100 + tams[i], 2);

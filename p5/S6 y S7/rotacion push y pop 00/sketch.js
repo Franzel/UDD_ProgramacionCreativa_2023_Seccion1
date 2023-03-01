@@ -1,22 +1,21 @@
-var r;
-
 function setup() {
-  createCanvas(400, 400);  
+  createCanvas(500, 500);
   rectMode(CENTER);
-  r=10;
-  colorMode(HSB,360,100,100);
 }
+
 function draw() {
   background(255);
-  fill(0, 255, 0);
+  //Esto no da el resultado esperado.
+  //Con este metodo estamos rotando el canvas, no los elementos
+  //rotate(radians(0)); 
+  rotate(radians(mouseY));  //activar esto para rotar con el mouse
+  fill(0,255,0);
+  rect(0, 0, 50, 50);
+  fill(255,0,0);
   rect(width/2, height/2, 100, 100);
-  r+=0.05;
-  for (let i=0; i<150; i++) {
-    push();
-    translate(width/2, height/2);
-    rotate(radians(r+i)*i*0.05);
-    fill(10*i, 100,100);
-    rect(0, 0, 300-2*i, 300-2*i);
-    pop();
-  }
+  line(0, 0, width/2, height/2);
+  
+  stroke(50);
+  line(width/2, 0, width/2, height);
+  line(0, height/2, width, height/2);
 }
