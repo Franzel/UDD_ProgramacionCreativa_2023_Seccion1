@@ -5,11 +5,11 @@ let velocidades = [];
 
 function setup() {
   createCanvas(500, 500);
-  for (let i = 0; i < nCols; ++i) {
+  for (let i = 0; i < nCols; i++) {
     angulos[i] = [];
     velocidades[i] = [];
     
-    for (let j = 0; j < nFilas; ++j) {
+    for (let j = 0; j < nFilas; j++) {
       angulos[i][j] = random(0, 360);
       velocidades[i][j] = random(-3,3);
     }
@@ -21,8 +21,8 @@ function draw() {
   background(0);
 
 
-  for (let i = 0; i < angulos.length; ++i) {
-    for (let j = 0; j < angulos[1].length; ++j) {
+  for (let i = 0; i < angulos.length; i++) {
+    for (let j = 0; j < angulos[1].length; j++) {
       angulos[i][j] += velocidades[i][j];
       rotador(15 * i, 15*j, angulos[i][j] + velocidades[i][j], 10);
     }
