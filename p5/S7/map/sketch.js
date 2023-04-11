@@ -17,7 +17,7 @@ function draw() {
     // let miRango = map(mouseX, 0, width, width/2+100, width/2-100);
 
     //veamos los rangos en la consola
-    print("mouseX: " + mouseX + "  miRango: " + miRango);
+    console.log("mouseX: " + mouseX + "  miRango: " + miRango);
 
     //usamos el nuevo rango para la posicion en x de un rectangulo
     rect(miRango,100,50,50);
