@@ -1,8 +1,6 @@
 let vel = 3;
 let rot = 1;
-
-let nElementos = 15;
-let nColumnas = 9;
+let nElementos = 12;
 
 let angulos = [];
 let velocidades = [];
@@ -13,7 +11,14 @@ let colores = [];
 function setup() {
   createCanvas(512, 512);
   rectMode(CENTER);
-  randomizar(); //esta vez puse todo dentro de una funcion, solo para no repetir. 
+
+  //vamos a rellenar nuestros arrays;
+  for (let i = 0; i < nElementos; ++i) {
+    angulos[i] = random(360);
+    velocidades[i] = random(-1, 1);
+    colores[i] = color(random(255), 200, 100 + random(155));
+    tamanos[i] = random(20, 40);
+  }
 }
 
 function draw() {
@@ -32,9 +37,7 @@ function draw() {
 function figura(x, y, t, r, c) {
   push();
   translate(x, y);
-  noStroke();
   fill(c/3, 50);
-  ellipse(0, 0, 50, 50);
   rotate(radians(r));
   fill(c);
   rect(0, 0, t, t);
@@ -50,21 +53,11 @@ function mousePressed() {
 }
 
 function randomizar() {
-
-    for (let i = 0; i < nElementos; ++i) {
-            angulos[i] = random(360);
-    }
-
-    for (let i = 0; i < nElementos; ++i) {
-            velocidades[i] = random(- 1,1);
-    }
-    
-    for (let i = 0; i < nElementos; ++i) {
-            colores[i] = color(random(255), 200, 100 +random(155));
-    }
-
-    for (let i = 0; i < nElementos; ++i) {
-            tamanos[i] = random(15,35);
-    }
+  for (let i = 0; i < nElementos; ++i) {
+    angulos[i] = random(360);
+    velocidades[i] = random(-1, 1);
+    colores[i] = color(random(255), 200, 100 + random(155));
+    tamanos[i] = random(20, 40);
+  }
   
 }
