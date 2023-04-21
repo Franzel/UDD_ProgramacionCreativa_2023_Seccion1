@@ -8,7 +8,7 @@ function setup() {
   for (let i=0; i<20; i++) {
     misAnillos[i] = [];
     for (let j=0; j< 17; j++) {
-      misAnillos[i][j] = new Modulo(color(0, random(255), random(255), 40), 35*i, 35*j, 20, int(random(1, 10)));
+      misAnillos[i][j] = new Modulo(color(0, random(255), random(255), 40), 35*i, 35*j, 20, round(random(2, 6)));
     }
   }
 }
@@ -27,10 +27,10 @@ function draw() {
       //  misAnillos[i][j].tam = 50;
       //}
       //misAnillos[i][j].tam = 10;
-      misAnillos[i][j].nRepeticiones = 5;
+      // misAnillos[i][j].nRepeticiones = 5;
       misAnillos[i][j].dibuja();
 
-      //misAnillos[i][j].tirita(random(5));
+      // misAnillos[i][j].tirita(random(5));
     }
   }
 }
