@@ -9,7 +9,7 @@ function draw() {
   textSize(14);
   fill(0);
   textAlign(CENTER);
-  text("Texto en Processing", width/2, height/2);
+  text("Texto en P5", width/2, height/2);
   
   //texto animado
   fill(0,0,255);

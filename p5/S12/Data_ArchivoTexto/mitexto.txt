@@ -2,4 +2,4 @@ Este es un ejemplo
 que demuestra
 que se puede cargar
 un archivo de texto
-en Processing
+externo en P5

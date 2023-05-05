@@ -26,7 +26,7 @@ function draw() {
   for (let i = 0; i<nAnillos; i++) { //loop para repetir anillos
     let radio = radioInicial + espacioAnillos*i; // en cada loop de 'i', incrementamos el radio en 20px
     let nElementos = nElementosInicial + 12*i; //en cada anillo, incrementamos en 12 la cantidad de elementos
-    let hue = 100 + i*7; //esta es una tecnica para limitar que un numero no crezca eternamente, el operador "módulo"(%) genera un ciclo.
+    let hue = 100 + i*7; 
     let miColor = color(hue, 100, 100);
 
     //dibujemos un anillo

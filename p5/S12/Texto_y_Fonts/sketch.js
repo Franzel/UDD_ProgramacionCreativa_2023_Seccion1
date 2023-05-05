@@ -12,6 +12,6 @@ function draw(){
   background(255);
   textFont(fuente, tamano); // Paso 3: especificar qué fuente usar. Puede ser distinto al inicial en el setup()
   fill(0); // Paso 4: especificar qué color
-  text("Texto en Processing!", 100,100); // Paso 5: Texto a dibujar (texto, posX, posY)
+  text("Texto en P5!", 100,100); // Paso 5: Texto a dibujar (texto, posX, posY)
   
 }
