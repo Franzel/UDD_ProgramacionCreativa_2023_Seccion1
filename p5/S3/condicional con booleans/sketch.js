@@ -21,3 +21,10 @@ function draw() {
     ellipse(width/2, height/2, 50, 50);
   }
 }
+
+function mousePressed() {
+  // el simbolo "!" significa "opuesto a"
+  // es decir, si es verdadero, le asigna falso
+  // y si es falso, le asigna verdadero
+  cuadrao = !cuadrao;
+}
